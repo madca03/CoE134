@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+    <% include ./_style %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 login">
+          <div class="login-header">
+            <span>Sign In</span>
+          </div>
+          <% include ../partials/flash %>
+          
+          <form action="/api/login" method="post">
+            <div class="form-section">
+              <div class="form-label">
+                <label>Username:</label>
+              </div>
+              <div class="form-input">
+                <input type="text" name="username"/>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-label">
+                <label>Password</label>
+              </div>
+              <div class="form-input">
+                <input type="password" name="password"/>
+              </div>
+            </div>
+
+            <div class="form-btn">
+              <input class="login-btn" type="submit" value="Log in"/>
+            </div>
+          </form>
+
+          <a href="/register">Sign Up</a>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.navbar {
+  background-color: #b02760;
+  height: 130px; }
+
+.app-title {
+  height: 130px; }
+  .app-title span {
+    line-height: 75px;
+    height: 130px;
+    color: #f7f3ec;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #5c5a56; }
+
+.user-pic {
+  display: inline-block;
+  position: absolute;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  top: 13px; }
+
+.user-name {
+  position: absolute;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 200;
+  top: 20px;
+  left: 80px; }
+
+.user-role {
+  position: absolute;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 200;
+  top: 40px;
+  left: 80px; }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+    <% include ./_style %>
+    <link rel="stylesheet" href="css/navbar.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="app-title">
+                <span>Application</span>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-5">
+              <span class="user-pic"></span>
+              <span class="user-name">Mark Allen D. Agaton</span>
+              <span class="user-role">Signed in as a Tutor</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-offset-5 col-md-5">
+              sfgsgs
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/logout">Sign Out</a>
+
+    <% if (user.isTutor()) { %>
+      <p>You are a tutor</p>
+    <% } else if (user.isTutee()) { %>
+      <p>You are a tutee</p>
+    <% } %>
+
+    <% include ../partials/flash %>
+  </body>
+</html>

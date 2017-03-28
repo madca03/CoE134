@@ -1,0 +1,81 @@
+$gray: #E9E9E9
+$white: #FFFFFF
+$pink-red: #ED2553
+$brown: #A07575
+$login-btn-color: #E3E3E3
+$login-btn-clicked: #ED2553 
+
+$login-top-margin: 40px
+
+body
+  background-color: $gray
+
+
+.login
+  margin-top: $login-top-margin
+  background-color: $white
+  border-radius: 8px
+  padding-left: 40px
+  padding-right: 40px
+  
+  .login-header
+    margin-top: 50px
+    margin-bottom: 30px
+    text-transform: uppercase
+    color: $pink-red
+    font-size: 30px
+    font-weight: 600
+
+  .form-section
+    margin-bottom: 20px
+
+    .form-label
+      color: $brown
+      text-transform: capitalize
+      font-size: 20px
+
+      label
+        font-weight: 200
+
+    .form-input
+      margin-top: 3px
+
+      input
+        width: 100%
+        border: 0
+        outline: 0
+        background: transparent
+        border-bottom: 1px solid black
+        font-size: 20px
+
+  .form-btn
+    text-align: center
+    margin-top: 40px
+
+    input
+      margin: auto
+      width: 40%
+      background: transparent
+      border: 3px solid $login-btn-color
+      color: $login-btn-color
+      font-size: 25px
+      outline: none
+
+    input:active
+      border-color: $login-btn-clicked
+      color: $login-btn-clicked
+
+  .form-input-radio
+    margin-top: 10px
+
+    ul
+      list-style-type: none
+
+      li
+        margin-bottom: 5px
+        font-color: $brown
+
+        label
+          font-size: 20px
+          font-weight: 200
+          margin-left: 15px
